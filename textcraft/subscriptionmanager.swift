@@ -19,9 +19,9 @@ enum SubscriptionProduct: String, CaseIterable, Identifiable {
     
     var priceDescription: String {
         switch self {
-        case .weekly: return "¥6/周"
-        case .monthly: return "¥18/月"
-        case .yearly: return "¥128/年 (省50%)"
+        case .weekly: return "¥3/周"
+        case .monthly: return "¥12/月"
+        case .yearly: return "¥88/年 (省76%)"
         }
     }
     

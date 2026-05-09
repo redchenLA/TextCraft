@@ -12,26 +12,31 @@ Transform your words into beautiful shareable cards.
 - Share directly to social media
 - No watermark with premium subscription
 
-## Setup
-1. Open `TextCraft.xcodeproj` in Xcode
-2. Set your development team in Signing & Capabilities
-3. Configure StoreKit subscription products in App Store Connect:
-   - `com.textcraft.premium.weekly` - ¥6/week
-   - `com.textcraft.premium.monthly` - ¥18/month
-   - `com.textcraft.premium.yearly` - ¥128/year
-4. Build and run
+## App Store Submission Checklist
 
-## CI/CD
-GitHub Actions workflow automatically builds the IPA on push to `main` branch.
-See `.github/workflows/build.yml` for details.
+- [x] Source code complete and compilable
+- [x] App Icon (1024x1024)
+- [x] Info.plist with photo library permissions
+- [x] StoreKit 2 subscription (weekly/monthly/yearly)
+- [x] App Store listing copy (app-store-listing.md)
+- [x] Privacy policy (privacy-policy.html)
+- [x] Screenshot generator (screenshots-generator.html)
+  - Open in browser → screenshot each phone mockup individually
+  - Required sizes: 6.7" (1290x2796) and 6.5" (1284x2778)
+- [ ] Deploy privacy policy to public URL
+- [ ] Create App Store Connect listing
+- [ ] Configure subscription products in App Store Connect
+- [ ] Archive & upload via Xcode
+- [ ] Submit for review
 
-## Architecture
-- **ContentView.swift** - Main UI with text input, template picker, preview
-- **CardView.swift** - Card rendering with templates and decorative elements
-- **SubscriptionManager.swift** - StoreKit 2 subscription handling
-- **CardStore.swift** - Simple card history management
+## App Store Listing
+See `app-store-listing.md` for:
+- App name, subtitle, keywords
+- Full description (Chinese)
+- Subscription pricing
+- Version notes
 
-## Requirements
-- Xcode 15+
-- iOS 16.0+
-- Swift 5.9+
+## Subscription Pricing
+- `com.textcraft.premium.weekly` - ¥3/week
+- `com.textcraft.premium.monthly` - ¥12/month
+- `com.textcraft.premium.yearly` - ¥88/year

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>TextCraft - App Store 截图生成器</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #111; display: flex; gap: 40px; padding: 60px 40px; justify-content: center; flex-wrap: wrap; }
+.phone { width: 390px; height: 844px; border-radius: 50px; overflow: hidden; position: relative; box-shadow: 0 0 0 4px #333, 0 20px 60px rgba(0,0,0,.5); }
+.screen { width: 100%; height: 100%; display: flex; flex-direction: column; position: relative; }
+.statusbar { height: 54px; padding: 14px 28px 0; display: flex; justify-content: space-between; font-size: 15px; font-weight: 600; z-index: 10; }
+.nav { padding: 8px 20px 12px; font-size: 18px; font-weight: 700; }
+.content { flex: 1; padding: 16px 20px; display: flex; flex-direction: column; gap: 14px; overflow: hidden; }
+.badge { display: inline-flex; align-items: center; justify-content: center; width: 20px; height: 20px; border-radius: 50%; background: #ff9500; font-size: 11px; }
+.safe-bottom { height: 34px; }
+</style>
+</head>
+<body>
+
+<!-- Screenshot 1: Hero / Main Screen -->
+<div class="phone">
+<div class="screen" style="background:#f2f2f7">
+<div class="statusbar" style="color:#333"><span>9:41</span><span>●●● ●</span></div>
+<div class="nav" style="color:#333">TextCraft</div>
+<div class="content">
+<div style="text-align:center;padding:10px 0">
+<div style="font-size:26px;font-weight:800;color:#111">文字变卡片 ✨</div>
+<div style="font-size:13px;color:#888;margin-top:4px">输入文字，选择模板，生成精美卡片</div>
+</div>
+<div style="background:white;border-radius:14px;padding:16px;flex:1;border:1px solid #e5e5ea;box-shadow:0 1px 3px rgba(0,0,0,.05)">
+<div style="color:#999;font-size:15px;line-height:1.8">生活不是等待暴风雨过去，而是学会在雨中跳舞。</div>
+</div>
+<div style="display:flex;align-items:center;gap:8px">
+<span style="font-size:15px;color:#aaa;font-weight:500">A</span>
+<div style="flex:1;height:4px;background:#e5e5ea;border-radius:2px"><div style="width:50%;height:100%;background:#007AFF;border-radius:2px"></div></div>
+<span style="font-size:20px;color:#333;font-weight:600">A</span>
+<span style="margin-left:6px;font-size:13px;color:#555;font-weight:600;width:24px;text-align:center">24</span>
+</div>
+<div style="font-size:15px;font-weight:600;color:#333">选择模板</div>
+<div style="display:flex;gap:10px;overflow:hidden">
+<div style="width:58px;height:78px;border-radius:10px;background:linear-gradient(135deg,#ff6b35,#ec6ead,#8e44ad);flex-shrink:0;border:3px solid #007AFF"></div>
+<div style="width:58px;height:78px;border-radius:10px;background:linear-gradient(180deg,#00d2ff,#3a7bd5);flex-shrink:0"></div>
+<div style="width:58px;height:78px;border-radius:10px;background:linear-gradient(135deg,#119482,#38b090);flex-shrink:0"></div>
+<div style="width:58px;height:78px;border-radius:10px;background:linear-gradient(180deg,#341266,#661892);flex-shrink:0;position:relative">
+<div class="badge" style="position:absolute;top:4px;right:4px;width:18px;height:18px;font-size:10px">🔒</div>
+</div>
+</div>
+<div style="background:#007AFF;border-radius:14px;padding:16px;text-align:center;color:white;font-weight:600;font-size:16px;margin-top:4px">📤 生成并分享</div>
+<div style="background:linear-gradient(90deg,#ff9500,#ffcc00);border-radius:14px;padding:14px;text-align:center;color:#000;font-weight:700;font-size:14px">👑 解锁高级版 - 去水印 &amp; 全部模板</div>
+</div>
+<div class="safe-bottom"></div>
+</div>
+</div>
+
+<!-- Screenshot 2: Card Preview with Sunset -->
+<div class="phone">
+<div class="screen" style="background:#f2f2f7">
+<div class="statusbar" style="color:#333"><span>9:41</span><span>●●● ●</span></div>
+<div class="nav" style="color:#333"><span>TextCraft</span></div>
+<div class="content" style="align-items:center;padding-top:30px">
+<div style="font-size:15px;font-weight:600;color:#333;align-self:flex-start">预览</div>
+<div style="width:290px;height:390px;border-radius:24px;background:linear-gradient(135deg,#ff6b35,#ec6ead,#8e44ad);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:36px;position:relative;overflow:hidden;box-shadow:0 10px 40px rgba(0,0,0,.2)">
+<div style="position:absolute;width:200px;height:200px;border-radius:50%;background:white;opacity:.08;top:-50px;left:-50px"></div>
+<div style="position:absolute;width:150px;height:150px;border-radius:50%;background:white;opacity:.05;bottom:-20px;right:-30px"></div>
+<div style="position:absolute;width:60px;height:1px;background:white;opacity:.15;top:30px"></div>
+<div style="font-size:24px;color:white;text-align:center;line-height:1.7;font-weight:500;text-shadow:0 2px 4px rgba(0,0,0,.3);z-index:1">生活不是等待暴风雨过去，<br>而是学会在雨中跳舞。</div>
+<div style="position:absolute;bottom:20px;font-size:11px;color:rgba(255,255,255,.4)">TextCraft</div>
+</div>
+<div style="margin-top:16px;font-size:13px;color:#888">日落渐变 · 含水印</div>
+<div style="width:100%;margin-top:auto;margin-bottom:10px;display:flex;flex-direction:column;gap:10px">
+<div style="background:#007AFF;border-radius:14px;padding:16px;text-align:center;color:white;font-weight:600;font-size:16px">📤 生成并分享</div>
+<div style="background:linear-gradient(90deg,#ff9500,#ffcc00);border-radius:14px;padding:14px;text-align:center;color:#000;font-weight:700;font-size:14px">👑 解锁高级版 - 去水印 &amp; 全部模板</div>
+</div>
+</div>
+<div class="safe-bottom"></div>
+</div>
+</div>
+
+<!-- Screenshot 3: Template Gallery -->
+<div class="phone">
+<div class="screen" style="background:#f2f2f7">
+<div class="statusbar" style="color:#333"><span>9:41</span><span>●●● ●</span></div>
+<div class="nav" style="color:#333"><span>TextCraft</span></div>
+<div class="content">
+<div style="text-align:center;padding:10px 0 20px">
+<div style="font-size:26px;font-weight:800;color:#111">10 款精选模板 🎨</div>
+<div style="font-size:13px;color:#888;margin-top:4px">总有一款适合你的心情</div>
+</div>
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px">
+<div style="height:105px;border-radius:12px;background:linear-gradient(135deg,#ff6b35,#ec6ead);display:flex;align-items:flex-end;padding:10px"><span style="font-size:12px;color:white;font-weight:600">日落</span></div>
+<div style="height:105px;border-radius:12px;background:linear-gradient(180deg,#00d2ff,#3a7bd5);display:flex;align-items:flex-end;padding:10px"><span style="font-size:12px;color:white;font-weight:600">海洋</span></div>
+<div style="height:105px;border-radius:12px;background:linear-gradient(180deg,#fff,#f0f0f0);display:flex;align-items:flex-end;padding:10px;border:1px solid #e5e5ea"><span style="font-size:12px;color:#333;font-weight:600">极简白</span></div>
+<div style="height:105px;border-radius:12px;background:linear-gradient(135deg,#119482,#38b090);display:flex;align-items:flex-end;padding:10px;position:relative"><span style="font-size:12px;color:white;font-weight:600">森林</span><div class="badge" style="position:absolute;top:6px;right:6px;width:18px;height:18px;font-size:10px">🔒</div></div>
+<div style="height:105px;border-radius:12px;background:linear-gradient(180deg,#341266,#661892);display:flex;align-items:flex-end;padding:10px;position:relative"><span style="font-size:12px;color:white;font-weight:600">星空</span><div class="badge" style="position:absolute;top:6px;right:6px;width:18px;height:18px;font-size:10px">🔒</div></div>
+<div style="height:105px;border-radius:12px;background:linear-gradient(135deg,#ff6b81,#ff4757);display:flex;align-items:flex-end;padding:10px;position:relative"><span style="font-size:12px;color:white;font-weight:600">玫瑰</span><div class="badge" style="position:absolute;top:6px;right:6px;width:18px;height:18px;font-size:10px">🔒</div></div>
+<div style="height:105px;border-radius:12px;background:linear-gradient(180deg,#444,#000);display:flex;align-items:flex-end;padding:10px;position:relative"><span style="font-size:12px;color:white;font-weight:600">极简黑</span><div class="badge" style="position:absolute;top:6px;right:6px;width:18px;height:18px;font-size:10px">🔒</div></div>
+<div style="height:105px;border-radius:12px;background:linear-gradient(135deg,#9b59b6,#00d2ff,#38b090);display:flex;align-items:flex-end;padding:10px;position:relative"><span style="font-size:12px;color:white;font-weight:600">霓虹</span><div class="badge" style="position:absolute;top:6px;right:6px;width:18px;height:18px;font-size:10px">🔒</div></div>
+<div style="height:105px;border-radius:12px;background:linear-gradient(135deg,rgba(179,76,230,.6),rgba(77,179,230,.6));display:flex;align-items:flex-end;padding:10px;position:relative"><span style="font-size:12px;color:#333;font-weight:600">水彩</span><div class="badge" style="position:absolute;top:6px;right:6px;width:18px;height:18px;font-size:10px">🔒</div></div>
+<div style="height:105px;border-radius:12px;background:linear-gradient(135deg,#bdbdbd,#9e9e9e);display:flex;align-items:flex-end;padding:10px;position:relative"><span style="font-size:12px;color:#333;font-weight:600">大理石</span><div class="badge" style="position:absolute;top:6px;right:6px;width:18px;height:18px;font-size:10px">🔒</div></div>
+</div>
+<div style="text-align:center;font-size:13px;color:#888;margin-top:8px">3 款免费 · 7 款高级版</div>
+</div>
+<div class="safe-bottom"></div>
+</div>
+</div>
+
+<!-- Screenshot 4: Premium Card (No Watermark) -->
+<div class="phone">
+<div class="screen" style="background:#f2f2f7">
+<div class="statusbar" style="color:#333"><span>9:41</span><span>●●● ●</span></div>
+<div class="nav" style="color:#333"><span>TextCraft</span><span style="margin-left:auto;color:#ff9500;font-weight:700;font-size:15px">👑 Pro</span></div>
+<div class="content" style="align-items:center;padding-top:30px">
+<div style="font-size:15px;font-weight:600;color:#333;align-self:flex-start">预览</div>
+<div style="width:290px;height:390px;border-radius:24px;background:linear-gradient(180deg,#00d2ff,#3a7bd5);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:36px;position:relative;overflow:hidden;box-shadow:0 10px 40px rgba(0,0,0,.2)">
+<div style="position:absolute;width:200px;height:200px;border-radius:50%;background:white;opacity:.08;top:-50px;right:-50px"></div>
+<div style="position:absolute;width:150px;height:150px;border-radius:50%;background:white;opacity:.05;bottom:40px;left:-30px"></div>
+<div style="font-size:22px;color:white;text-align:center;line-height:1.7;font-weight:500;text-shadow:0 2px 4px rgba(0,0,0,.3);z-index:1">你今天的微笑，是这个世界最温暖的风景。</div>
+<!-- NO watermark here -->
+</div>
+<div style="margin-top:16px;display:flex;gap:8px;align-items:center">
+<div style="width:8px;height:8px;border-radius:50%;background:#34c759"></div>
+<span style="font-size:13px;color:#34c759;font-weight:600">无水印 · 高级版</span>
+</div>
+<div style="width:100%;margin-top:auto;margin-bottom:10px">
+<div style="background:#007AFF;border-radius:14px;padding:16px;text-align:center;color:white;font-weight:600;font-size:16px">📤 生成并分享</div>
+</div>
+</div>
+<div class="safe-bottom"></div>
+</div>
+</div>
+
+<!-- Screenshot 5: Paywall -->
+<div class="phone">
+<div class="screen" style="background:white">
+<div class="statusbar" style="color:#333"><span>9:41</span><span>●●● ●</span></div>
+<div style="padding:8px 20px;display:flex;justify-content:flex-end"><span style="color:#007AFF;font-size:16px;font-weight:500">关闭</span></div>
+<div style="padding:0 20px;display:flex;flex-direction:column;gap:20px;flex:1;overflow:hidden">
+<div style="text-align:center;padding-top:8px">
+<div style="font-size:48px">👑</div>
+<div style="font-size:20px;font-weight:800;margin-top:10px;color:#111">解锁高级版</div>
+<div style="font-size:13px;color:#888;margin-top:4px">去除水印 · 全部模板 · 持续更新</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px">
+<div style="display:flex;align-items:center;gap:12px"><span style="font-size:18px">💧</span><span style="font-size:15px;color:#333">去除水印</span></div>
+<div style="display:flex;align-items:center;gap:12px"><span style="font-size:18px">🎨</span><span style="font-size:15px;color:#333">解锁全部 10 款模板</span></div>
+<div style="display:flex;align-items:center;gap:12px"><span style="font-size:18px">✨</span><span style="font-size:15px;color:#333">未来新模板优先体验</span></div>
+<div style="display:flex;align-items:center;gap:12px"><span style="font-size:18px">🔄</span><span style="font-size:15px;color:#333">取消随时可退</span></div>
+</div>
+<div style="display:flex;flex-direction:column;gap:8px;margin-top:auto">
+<div style="border:2px solid #007AFF;border-radius:12px;padding:14px;display:flex;align-items:center;justify-content:space-between">
+<div><div style="font-weight:600;color:#333;font-size:14px">年付</div><div style="font-size:12px;color:#888">¥88/年 (省76%)</div></div>
+<span style="font-size:12px;font-weight:700;color:white;background:#ff9500;padding:3px 8px;border-radius:6px">最划算</span>
+</div>
+<div style="border:2px solid #007AFF;border-radius:12px;padding:14px;background:rgba(0,122,255,.06);display:flex;align-items:center;justify-content:space-between">
+<div><div style="font-weight:600;color:#333;font-size:14px">月付</div><div style="font-size:12px;color:#888">¥12/月</div></div>
+<span style="color:#007AFF;font-size:20px">✓</span>
+</div>
+<div style="border:2px solid #007AFF;border-radius:12px;padding:14px;display:flex;align-items:center;justify-content:space-between">
+<div><div style="font-weight:600;color:#333;font-size:14px">周付</div><div style="font-size:12px;color:#888">¥3/周</div></div>
+<span style="color:#ccc;font-size:20px">○</span>
+</div>
+</div>
+</div>
+<div style="padding:12px 20px 40px"><div style="background:#007AFF;border-radius:14px;padding:16px;text-align:center;color:white;font-weight:700;font-size:16px">订阅 ¥12/月</div></div>
+</div>
+</div>
+
+</body></html>
